@@ -21,6 +21,7 @@ public class PatientController {
     @Autowired
     PatientRepository patientRepository;
 
+
     @GetMapping("/patients")
      public List<PatientEntity> getAllPatients() {
         return patientRepository.findAll();
